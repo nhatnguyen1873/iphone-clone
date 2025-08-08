@@ -183,9 +183,6 @@ export const VideoCarousel = ({ videos }: VideoCarouselProps) => {
               onPlay={() => {
                 setVideo((pre) => ({ ...pre, isPlaying: true }));
               }}
-              onLoadedMetadata={() => {
-                console.log('loaded metadata', i);
-              }}
             >
               <source src={video.video} type='video/mp4' />
             </video>
