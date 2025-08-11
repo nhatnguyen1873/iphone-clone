@@ -157,7 +157,7 @@ export const VideoCarousel = ({ videos }: VideoCarouselProps) => {
 
   return (
     <div className='flex flex-col gap-10'>
-      <div className='flex h-[30rem] gap-10 overflow-x-scroll px-(--padding-horizontal) [--padding-horizontal:max((100vw-var(--spacing-media-gallery-fluid))/2,(100vw-var(--spacing-media-gallery-max))/2)] [scrollbar-width:none]'>
+      <div className='px-media-gallery-padding flex h-[30rem] gap-10 overflow-x-scroll [scrollbar-width:none]'>
         {videos.map((video, i) => (
           <div
             key={video.id}

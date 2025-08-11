@@ -1,7 +1,10 @@
-import type { HTMLAttributes } from 'react';
+import type { HTMLAttributes, RefAttributes } from 'react';
 import { twMerge } from 'tailwind-merge';
 
-export type SectionHeadingProps = HTMLAttributes<HTMLHeadingElement>;
+export type SectionHeadingRef = HTMLHeadingElement;
+
+export type SectionHeadingProps = HTMLAttributes<SectionHeadingRef> &
+  RefAttributes<SectionHeadingRef>;
 
 export const SectionHeading = (props: SectionHeadingProps) => {
   return (

@@ -16,13 +16,13 @@ export const Highlights = () => {
   useGSAP(() => {
     gsap.to('#title', {
       opacity: 1,
-      transform: 'translateY(0)',
+      y: 0,
       duration: 0.8,
     });
 
     gsap.to('.cta-link', {
       opacity: 1,
-      transform: 'translateY(0)',
+      y: 0,
       duration: 1,
       stagger: 0.25,
     });

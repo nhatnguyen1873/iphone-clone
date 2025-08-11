@@ -30,6 +30,10 @@
   --spacing-header-nav: var(--header-nav-height);
   --spacing-media-gallery-max: 1680px;
   --spacing-media-gallery-fluid: 87.5vw;
+  --spacing-media-gallery-padding: max(
+    calc((100vw - var(--spacing-media-gallery-max)) / 2),
+    calc((100vw - var(--spacing-media-gallery-fluid)) / 2)
+  );
 
   --blur-common: 20px;
 }

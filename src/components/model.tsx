@@ -45,14 +45,14 @@ export const Model = () => {
   useEffect(() => {
     if (size === 'small') {
       animateWithGsapTimeline(tl, large, largeRotation, '#view2', '#view1', {
-        transform: 'translateX(0)',
+        x: 0,
         duration: 2,
       });
     }
 
     if (size === 'large') {
       animateWithGsapTimeline(tl, small, smallRotation, '#view1', '#view2', {
-        transform: 'translateX(-100%)',
+        x: '-100%',
         duration: 2,
       });
     }
@@ -61,13 +61,13 @@ export const Model = () => {
   useGSAP(() => {
     gsap.to('#heading', {
       opacity: 1,
-      translateY: 0,
+      y: 0,
       duration: 0.8,
     });
   }, []);
 
   return (
-    <GlobalSection className='flex flex-col gap-5 px-(--padding-horizontal) [--padding-horizontal:max((100vw-var(--spacing-media-gallery-fluid))/2,(100vw-var(--spacing-media-gallery-max))/2)]'>
+    <GlobalSection className='px-media-gallery-padding flex flex-col gap-5'>
       <SectionHeading id='heading' className='translate-y-20 opacity-0'>
         Take a closer look.
       </SectionHeading>
