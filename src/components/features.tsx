@@ -5,6 +5,10 @@ import {
   SectionHeading,
   type SectionHeadingRef,
 } from '@/components/section-heading';
+import {
+  TextHighlight,
+  TextHighlightMain,
+} from '@/components/ui/text-highlight';
 import { animateInView } from '@/utils/animations';
 import { explore1Img, explore2Img, exploreVideo } from '@/utils/media';
 import { useGSAP } from '@gsap/react';
@@ -123,14 +127,14 @@ export const Features = () => {
                 },
               ].map((item) => (
                 <div key={item.id} className='grow'>
-                  <p
+                  <TextHighlight
                     key={item.id}
-                    className='text-gray g_text max-w-md translate-y-20 text-lg font-semibold opacity-0 md:text-xl'
+                    className='g_text max-w-md translate-y-20 opacity-0'
                   >
                     {item.beforeHighlight}
-                    <span className='text-white'>{item.highlightText}</span>
+                    <TextHighlightMain>{item.highlightText}</TextHighlightMain>
                     {item.afterHighlight}
-                  </p>
+                  </TextHighlight>
                 </div>
               ))}
             </div>

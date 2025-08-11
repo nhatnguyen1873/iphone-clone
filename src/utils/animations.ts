@@ -13,7 +13,7 @@ export const animateInView = (
     ...animationProps,
     scrollTrigger: {
       trigger: target,
-      toggleActions: 'restart reverse restart reverse',
+      toggleActions: 'play reverse play reverse',
       ...scrollProps,
     },
   });

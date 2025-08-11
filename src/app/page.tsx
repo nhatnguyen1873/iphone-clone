@@ -1,6 +1,8 @@
 import { Features } from '@/components/features';
+import { Footer } from '@/components/footer';
 import { Hero } from '@/components/hero';
 import { Highlights } from '@/components/highlights';
+import { HowItWorks } from '@/components/how-it-works';
 import { Header } from '@/components/layouts/header';
 import { Model } from '@/components/model';
 
@@ -13,6 +15,8 @@ export default function Home() {
         <Highlights />
         <Model />
         <Features />
+        <HowItWorks />
+        <Footer />
       </main>
     </div>
   );

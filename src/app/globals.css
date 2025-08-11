@@ -5,11 +5,13 @@
   --foreground: #ffffff;
 
   --header-nav-height: 48px;
+  --content-padding: 16px;
 }
 
 @media (min-width: theme(--breakpoint-md)) {
   :root {
     --header-nav-height: 44px;
+    --content-padding: 22px;
   }
 }
 
@@ -34,6 +36,8 @@
     calc((100vw - var(--spacing-media-gallery-max)) / 2),
     calc((100vw - var(--spacing-media-gallery-fluid)) / 2)
   );
+  --spacing-content-max: 980px;
+  --spacing-content-padding: var(--content-padding);
 
   --blur-common: 20px;
 }
